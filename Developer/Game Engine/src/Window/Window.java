@@ -1,3 +1,5 @@
+package Window;
+
 import Input.KeyboardInput;
 
 import javax.swing.*;
