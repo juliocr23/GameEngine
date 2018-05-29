@@ -59,7 +59,7 @@ public class Animation {
     }
 
 
-    public Image nextImage() {
+    public BufferedImage nextImage() {
 
         if(current != image.size()-1) {
             if (delay == 0) {
@@ -76,7 +76,7 @@ public class Animation {
         current = 0;
     }
 
-    public Image previousImage() {
+    public BufferedImage previousImage() {
 
         if (current > 0){
             if (delay == 0) {
@@ -88,7 +88,7 @@ public class Animation {
         return image.get(current);
     }
 
-    public Image getCurrentImg(){ return image.get(current);}
+    public BufferedImage getCurrentImg(){ return image.get(current);}
 
     public boolean isAnimationOver(){ return current == image.size()-1; }
 
