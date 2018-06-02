@@ -24,16 +24,16 @@ public abstract class Sprite extends Rectangle {
     protected boolean moveUp;
     protected boolean moveDown;
 
-    protected double Vxi;                        //The initial velocity of the sprite in the x direction
-    protected double Vxf;                        //The final velocity of the sprite in the x direction
+    protected double initialX_Velocity;                        //The initial velocity of the sprite in the x direction
+    protected double finalX_Velocity;                        //The final velocity of the sprite in the x direction
 
-    protected double Vyi;                        //The initial velocity of the sprite in the y direction
-    protected double Vyf;                        //The final velocity of the sprite in the y direction
+    protected double initialY_Velocity;                        //The initial velocity of the sprite in the y direction
+    protected double finalY_Velocity;                        //The final velocity of the sprite in the y direction
 
-    protected double ax;                         //The acceleration of the sprite in the x direction
-    protected double ay;                         //The acceleration of the sprite in the y direction
+    protected double x_Acceleration;                         //The acceleration of the sprite in the x direction
+    protected double y_Acceleration;                         //The acceleration of the sprite in the y direction
 
-    protected double imageScale;                //The scale for the images.
+    protected double imageScale;                 //The scale for the images.
 
 
     public Sprite(double x,double y,int width,int height,String imgFilesPath){
@@ -56,14 +56,14 @@ public abstract class Sprite extends Rectangle {
 
         imgFormat = ".png";
 
-        Vxi = 0;
-        Vxf = 0;
+        initialX_Velocity = 0;
+        finalX_Velocity = 0;
 
-        Vyi = 0;
-        Vyf = 0;
+        initialY_Velocity = 0;
+        finalY_Velocity = 0;
 
-        ax  = 0;
-        ay  = 0;
+        x_Acceleration = 0;
+        y_Acceleration = 0;
 
         imageScale = 1;
     }
@@ -199,52 +199,52 @@ public abstract class Sprite extends Rectangle {
         this.moveDown = moveDown;
     }
 
-    public double getVxi() {
-        return Vxi;
+    public double getInitialX_Velocity() {
+        return initialX_Velocity;
     }
 
-    public void setVxi(double vxi) {
-        Vxi = vxi;
+    public void setInitialX_Velocity(double initialX_Velocity) {
+        this.initialX_Velocity = initialX_Velocity;
     }
 
-    public double getVxf() {
-        return Vxf;
+    public double getFinalX_Velocity() {
+        return finalX_Velocity;
     }
 
-    public void setVxf(double vxf) {
-        Vxf = vxf;
+    public void setFinalX_Velocity(double finalX_Velocity) {
+        this.finalX_Velocity = finalX_Velocity;
     }
 
-    public double getVyi() {
-        return Vyi;
+    public double getInitialY_Velocity() {
+        return initialY_Velocity;
     }
 
-    public void setVyi(double vyi) {
-        Vyi = vyi;
+    public void setInitialY_Velocity(double initialY_Velocity) {
+        this.initialY_Velocity = initialY_Velocity;
     }
 
-    public double getVyf() {
-        return Vyf;
+    public double getFinalY_Velocity() {
+        return finalY_Velocity;
     }
 
-    public void setVyf(double vyf) {
-        Vyf = vyf;
+    public void setFinalY_Velocity(double finalY_Velocity) {
+        this.finalY_Velocity = finalY_Velocity;
     }
 
-    public double getAx() {
-        return ax;
+    public double getX_Acceleration() {
+        return x_Acceleration;
     }
 
-    public void setAx(double ax) {
-        this.ax = ax;
+    public void setX_Acceleration(double x_Acceleration) {
+        this.x_Acceleration = x_Acceleration;
     }
 
-    public double getAy() {
-        return ay;
+    public double getY_Acceleration() {
+        return y_Acceleration;
     }
 
-    public void setAy(double ay) {
-        this.ay = ay;
+    public void setY_Acceleration(double y_Acceleration) {
+        this.y_Acceleration = y_Acceleration;
     }
 
     public double getImageScale() {
