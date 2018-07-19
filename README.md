@@ -10,35 +10,20 @@ In the future I want to add:
 
 spaceships (worlds)
 
-
-
 races      (worlds)
-
-
 
 RPG        (worlds)
 
-
-
 allow input from controllers
-
-
 
 GUI for Menu.
 
-
-
-
-
-
-
-
 SAVING 
 
-
-
 DumbWalking enemies  abstract
-DumbFlying enemies   abstract.
-Boss       enemies   abstract.
+
+DumbFlying enemies   abstract
+
+Boss       enemies   abstract
 
 
