@@ -1,6 +1,6 @@
 # GameEngine
 
-In this project, I focused on creating an light weight API library for 2D games. 
+In this project, I focused on creating a light weight API library for 2D games. 
 
 Where you can create  animations, sprites, collisions, Players,parallax scrolling, as well as 2D platformer worlds. 
 
